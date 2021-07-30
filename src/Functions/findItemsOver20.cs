@@ -3,12 +3,19 @@ using System;
 
 namespace Functions {
     public class FindItemsOver20Class {
-        public string[][] FindItemsOver20(string[][] listOfObjects) {
-            int numb = listOfObjects.Length;
-            var newListOfObjects = new string[numb][];
+
+        public class Items {
+            public int Qty {get; set;}
+            public string Name {get; set;}
+        }
+
+        public List<Items> FindItemsOver20(List<Items> listOfObjects) {
+            var newListOfObjects = new List<Items>();
             foreach (var item in listOfObjects) {
-                Console.WriteLine("Inside Loop");
-                Console.WriteLine(item);
+                if (item.Qty > 20) {
+                    newListOfObjects.Add(item);
+                    Console.WriteLine($"Inside if: {item.Name}");
+                }
             }
             return newListOfObjects;
         }
