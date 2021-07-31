@@ -2,4 +2,4 @@ language: csharp
 mono: none
 dotnet: 5.0.205
 script:
-  dotnet test 
+  dotnet test
