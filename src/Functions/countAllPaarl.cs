@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Functions {
     public class CountAllPaarlClass {
-        public string[] CountAllPaarl(string name) {
+        public int CountAllPaarl(string name) {
             var list = new List<string>();
             var nameSplited = name.Split(", ");
 
@@ -12,7 +12,7 @@ namespace Functions {
                     list.Add(nameSplited[index]);
                 }
             }
-            return list.ToArray();
+            return list.ToArray().Length;
         }
     }
 }

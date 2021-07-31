@@ -1,14 +1,15 @@
 using System;
 using Xunit;
 using System.Collections.Generic;
-using static Functions.FindItemsOver20Class;
+using static Functions.FindItemsOverClass;
 
 namespace Functions.test {
-    public class FindItemsOver20
+    public class FindItemsOver
     {
-        // [Fact]
-        public void findItemsOver20() {
-            var findItemsOver20 = new FindItemsOver20Class();
+
+        [Fact]
+        public void findItemsOver() {
+            var findItemsOver = new FindItemsOverClass();
 
             var itemsListOne =  new List<Items>() { 
                 new Items(){ Qty = 56, Name="Banna"},
@@ -18,12 +19,11 @@ namespace Functions.test {
             };
 
             var itemsListTwo =  new List<Items>() { 
-                new Items(){ Qty = 56, Name="Banna"},
-                new Items(){ Qty = 43, Name="Apple"},
+                new Items(){Name="Banna", Qty = 56},
             };
-
-            // var overs = findItemsOver20.FindItemsOver20(itemsListOne);
-            Assert.Equal(itemsListTwo, findItemsOver20.FindItemsOver20(itemsListOne));
+            var overs = findItemsOver.FindItemsOver(itemsListOne, 45);
+            Assert.Equal(itemsListTwo, overs);
+            // Assert.IsTrue(itemsListTwo.SequenceEqual(overs));
             // itemsListTwo.ShouldDeepEqual(findItemsOver20.FindItemsOver20(itemsListOne));
         }
     }

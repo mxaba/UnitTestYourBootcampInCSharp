@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Functions {
     public class CountAllFromTownClass {
-        public string[] CountAllFromTown(string name, string city) {
+        public int CountAllFromTown(string name, string city) {
             var list = new List<string>();
             var nameSplited = name.Split(", ");
 
@@ -11,7 +11,7 @@ namespace Functions {
                     list.Add(nameSplited[index]);
                 }
             }
-            return list.ToArray();
+            return list.ToArray().Length;
         }
     }
 }

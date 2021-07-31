@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using static Functions.FindItemsOver20Class;
+using static Functions.MostProfitableDepartmentClass;
 
 namespace Functions {
     class Program {
@@ -14,17 +15,14 @@ namespace Functions {
 
             CountAllPaarlClass paarl = new CountAllPaarlClass();
             var OnlyPaarl = paarl.CountAllPaarl("CL 900, CJ 678 543, CA 34567, CJ 67890, CN 7864, CJ 8765");
-            foreach( string printPaarl in OnlyPaarl ) {
-                Console.WriteLine(printPaarl);
-            }
+            Console.WriteLine(OnlyPaarl);
+
             
             Console.WriteLine("CountAllFromTownClass");
 
             CountAllFromTownClass city = new CountAllFromTownClass();
             var cities = city.CountAllFromTown("CL 900, CJ 678 543, CA 34567, CJ 67890, CN 7864, CJ 8765", "CL");
-            foreach( string printPaarl in cities ) {
-                Console.WriteLine(printPaarl);
-            }
+            Console.WriteLine(cities);
 
             TotalPhoneBillClass bill = new TotalPhoneBillClass();
             var bills = bill.TotalPhoneBill("call, sms, call, sms, sms");
@@ -40,6 +38,18 @@ namespace Functions {
             FindItemsOver20Class over = new FindItemsOver20Class();
             var overs = over.FindItemsOver20(itemsList2);
             Console.WriteLine(overs.Count);
+
+            Console.WriteLine("MostProfitableDepartmentClass");
+            Console.WriteLine("MostProfitableDepartmentClass");
+            Console.WriteLine("MostProfitableDepartmentClass");
+
+            var dep =  new List<MostDepartments>() { 
+                new MostDepartments(){Department = "hardware", Sales = 4500, Day = "Monday"},
+                new MostDepartments(){Department = "Okay", Sales = 90400, Day = "Monday"},
+            };
+            
+            MostProfitableDepartmentClass profit = new MostProfitableDepartmentClass();
+            Console.WriteLine(profit.MostProfitableDepartment(dep));
 
             
         }
