@@ -6,7 +6,7 @@ using static Functions.FindItemsOver20Class;
 namespace Functions.test {
     public class FindItemsOver20
     {
-        // [Fact]
+        // [Fact
         public void findItemsOver20() {
             var findItemsOver20 = new FindItemsOver20Class();
 
