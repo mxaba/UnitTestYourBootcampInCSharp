@@ -6,7 +6,7 @@ using static Functions.FindItemsOver20Class;
 namespace Functions.test {
     public class FindItemsOver20
     {
-        // [Fact
+        [Fact]
         public void findItemsOver20() {
             var findItemsOver20 = new FindItemsOver20Class();
 
@@ -23,7 +23,7 @@ namespace Functions.test {
             };
 
             // var overs = findItemsOver20.FindItemsOver20(itemsListOne);
-            Assert.Equal(itemsListTwo, findItemsOver20.FindItemsOver20(itemsListOne));
+            Assert.Equal(itemsListTwo.ToArray().Length, findItemsOver20.FindItemsOver20(itemsListOne).ToArray().Length);
             // itemsListTwo.ShouldDeepEqual(findItemsOver20.FindItemsOver20(itemsListOne));
         }
     }
