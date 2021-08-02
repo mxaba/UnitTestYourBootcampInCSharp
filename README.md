@@ -1,4 +1,4 @@
-# bootcamp-csharp-functions-tests
+# UnitTestYourBootcampInCSharp
 
 # Badges
 ## .NET
