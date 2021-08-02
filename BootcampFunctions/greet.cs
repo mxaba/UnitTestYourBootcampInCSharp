@@ -1,6 +1,6 @@
 namespace BootcampFunctions {
-    public class GreetPerson {
-        public string Greet(string name) {
+    public class Greet {
+        public string greet(string name) {
             if (name is string){
                 return $"Hello, {name}";
             } else {

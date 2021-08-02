@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 using System.Collections.Generic;
-using static BootcampFunctions.FindItemsOverClass;
+using static BootcampFunctions.FindItemsOver;
 using Newtonsoft.Json;
 
 namespace BootcampFunctions.test {
@@ -9,8 +9,8 @@ namespace BootcampFunctions.test {
     {
 
         [Fact]
-        public void findItemsOver45() {
-            var findItemsOver = new FindItemsOverClass();
+        public void ShouldFindItemsOver45AndReturnIt() {
+            var findItemsOver = new BootcampFunctions.FindItemsOver();
 
             var itemsListOne =  new List<Items>() { 
                 new Items(){ Qty = 56, Name="Banna"},
@@ -23,17 +23,17 @@ namespace BootcampFunctions.test {
                 new Items(){Name="Banna", Qty = 56},
             };
 
-            var overs = findItemsOver.FindItemsOver(itemsListOne, 45);
+            var overs = findItemsOver.findItemsOver(itemsListOne, 45);
 
             var obj1Str = JsonConvert.SerializeObject(overs);
             var obj2Str = JsonConvert.SerializeObject(itemsListTwo);
             Assert.Equal(obj1Str, obj2Str );
-            Assert.Equal(itemsListTwo.ToArray().Length, findItemsOver.FindItemsOver(itemsListOne, 45).ToArray().Length);
+            Assert.Equal(itemsListTwo.ToArray().Length, findItemsOver.findItemsOver(itemsListOne, 45).ToArray().Length);
         }
 
         [Fact]
-        public void findItemsOver10() {
-            var findItemsOver = new FindItemsOverClass();
+        public void ShouldFindItemsOver10AndReturnIt() {
+            var findItemsOver = new BootcampFunctions.FindItemsOver();
 
             var itemsListOne =  new List<Items>() { 
                 new Items(){ Qty = 56, Name="Banna"},
@@ -48,7 +48,7 @@ namespace BootcampFunctions.test {
                 new Items(){ Qty = 14, Name="Bread"}
             };
 
-            var overs = findItemsOver.FindItemsOver(itemsListOne, 10);
+            var overs = findItemsOver.findItemsOver(itemsListOne, 10);
 
             var obj1Str = JsonConvert.SerializeObject(overs);
             var obj2Str = JsonConvert.SerializeObject(itemsListTwo);
@@ -57,8 +57,8 @@ namespace BootcampFunctions.test {
         }
 
         [Fact]
-        public void findItemsOver2() {
-            var findItemsOver = new FindItemsOverClass();
+        public void ShouldFindItemsOver2AndReturnIt() {
+            var findItemsOver = new BootcampFunctions.FindItemsOver();
 
             var itemsListOne =  new List<Items>() { 
                 new Items(){ Qty = 56, Name="Banna"},
@@ -74,7 +74,7 @@ namespace BootcampFunctions.test {
                 new Items(){ Qty = 14, Name="Bread"}
             };
 
-            var overs = findItemsOver.FindItemsOver(itemsListOne, 2);
+            var overs = findItemsOver.findItemsOver(itemsListOne, 2);
 
             var obj1Str = JsonConvert.SerializeObject(overs);
             var obj2Str = JsonConvert.SerializeObject(itemsListTwo);

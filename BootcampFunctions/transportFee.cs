@@ -1,6 +1,6 @@
 namespace BootcampFunctions {
-    public class TransportFeeClass {
-        public string TransportFee(string shift){
+    public class TransportFee {
+        public string transportFee(string shift){
             switch (shift.ToLower()) {
                 case "morning":
                     return "R20";

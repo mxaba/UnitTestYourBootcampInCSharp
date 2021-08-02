@@ -1,6 +1,6 @@
 namespace BootcampFunctions {
-    public class FromWhereClass {
-        public string FromWhere(string city) {
+    public class FromWhere {
+        public string fromWhere(string city) {
             switch (city.ToLower()) {
                 case "cy":
                     return "Bellville";

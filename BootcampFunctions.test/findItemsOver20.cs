@@ -1,15 +1,15 @@
 using System;
 using Xunit;
 using System.Collections.Generic;
-using static BootcampFunctions.FindItemsOver20Class;
+using static BootcampFunctions.FindItemsOver20;
 using Newtonsoft.Json;
 
 namespace BootcampFunctions.test {
     public class FindItemsOver20
     {
         [Fact]
-        public void findItemsOver20ShouldReturn2Items() {
-            var findItemsOver20 = new FindItemsOver20Class();
+        public void FindItemsOver20ShouldReturn2Items() {
+            var findItemsOver20 = new BootcampFunctions.FindItemsOver20();
 
             var itemsListOne =  new List<Items>() { 
                 new Items(){ Qty = 56, Name="Banna"},
@@ -23,7 +23,7 @@ namespace BootcampFunctions.test {
                 new Items(){ Qty = 43, Name="Apple"},
             };
 
-            var overs = findItemsOver20.FindItemsOver20(itemsListOne);
+            var overs = findItemsOver20.findItemsOver20(itemsListOne);
 
             var obj1Str = JsonConvert.SerializeObject(overs);
             var obj2Str = JsonConvert.SerializeObject(itemsListTwo);
@@ -34,8 +34,8 @@ namespace BootcampFunctions.test {
         }
 
         [Fact]
-        public void findItemsOver20ShouldReturn3Items() {
-            var findItemsOver20 = new FindItemsOver20Class();
+        public void FindItemsOver20ShouldReturn3Items() {
+            var findItemsOver20 = new BootcampFunctions.FindItemsOver20();
 
             var itemsListOne =  new List<Items>() { 
                 new Items(){ Qty = 56, Name="Banna"},
@@ -50,7 +50,7 @@ namespace BootcampFunctions.test {
                 new Items(){ Qty = 41, Name="Bread"}
             };
 
-            var overs = findItemsOver20.FindItemsOver20(itemsListOne);
+            var overs = findItemsOver20.findItemsOver20(itemsListOne);
 
             var obj1Str = JsonConvert.SerializeObject(overs);
             var obj2Str = JsonConvert.SerializeObject(itemsListTwo);

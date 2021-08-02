@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
 namespace BootcampFunctions {
-    public class CountAllFromTownClass {
-        public int CountAllFromTown(string name, string city) {
+    public class CountAllFromTown {
+        public int countAllFromTown(string name, string city) {
             var list = new List<string>();
             var nameSplited = name.Split(", ");
 

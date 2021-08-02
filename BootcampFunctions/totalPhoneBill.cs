@@ -1,6 +1,6 @@
 namespace BootcampFunctions {
-    public class TotalPhoneBillClass {
-        public string TotalPhoneBill(string name){
+    public class TotalPhoneBill {
+        public string totalPhoneBill(string name){
             var nameSplited = name.Split(", ");
             double call = 0;
             double sms = 0;

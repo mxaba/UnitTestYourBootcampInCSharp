@@ -1,8 +1,8 @@
 using System;
 
 namespace BootcampFunctions {
-    public class FromBellvilleClass {
-        public bool IsFromBellville(string name) {
+    public class IsFromBellville {
+        public bool isFromBellville(string name) {
             return name.StartsWith("CY");
         }
     }

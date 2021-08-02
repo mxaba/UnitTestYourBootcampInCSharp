@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 
 namespace BootcampFunctions {
-    public class CountAllPaarlClass {
-        public int CountAllPaarl(string name) {
+    public class CountAllPaarl {
+        public int countAllPaarl(string name) {
             var list = new List<string>();
             var nameSplited = name.Split(", ");
 

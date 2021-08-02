@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\BootcampFunctions\BootcampFunctions.csproj" />
+    <ProjectReference Include="..\BootcampFunctions\BootcampFunctions.csproj" />
   </ItemGroup>
 
 </Project>
