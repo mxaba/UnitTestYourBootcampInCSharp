@@ -14,7 +14,7 @@ namespace BootcampFunctions {
             foreach (var item in listOfObjects) {
                 if (item.Qty > qty) {
                     newListOfObjects.Add(item);
-                    Console.WriteLine($"Inside if: {item.Name}");
+                    // Console.WriteLine($"Inside if: {item.Name}");
                 }
             }
             return newListOfObjects;
