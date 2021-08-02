@@ -1,4 +1,4 @@
-namespace Functions {
+namespace BootcampFunctions {
     public class TransportFeeClass {
         public string TransportFee(string shift){
             switch (shift.ToLower()) {

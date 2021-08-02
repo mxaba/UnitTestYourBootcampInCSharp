@@ -1,14 +1,25 @@
 using System;
 using Xunit;
 
-namespace Functions.test {
+namespace BootcampFunctions.test {
     public class Greet
     {
         [Fact]
-        public void greet() {
+        public void ShouldGreetMcebo() {
             var greetClass = new GreetPerson();
             Assert.Equal("Hello, Mcebo", greetClass.Greet("Mcebo"));
+        }
+
+        [Fact]
+        public void ShouldGreeAndre() {
+            var greetClass = new GreetPerson();
             Assert.Equal("Hello, Andre", greetClass.Greet("Andre"));
+        }
+
+        [Fact]
+        public void ShouldGreePeople() {
+            var greetClass = new GreetPerson();
+            Assert.Equal("Hello, People", greetClass.Greet("People"));
         }
     }
 }

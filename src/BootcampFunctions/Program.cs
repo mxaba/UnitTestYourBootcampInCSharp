@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using static Functions.FindItemsOver20Class;
-using static Functions.MostProfitableDepartmentClass;
+using static BootcampFunctions.FindItemsOver20Class;
+using static BootcampFunctions.MostProfitableDepartmentClass;
 
-namespace Functions {
+namespace BootcampFunctions {
     class Program {
         static void Main(string[] args) {
             GreetPerson greet = new GreetPerson();

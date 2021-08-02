@@ -1,6 +1,6 @@
 using System;
 
-namespace Functions {
+namespace BootcampFunctions {
     public class YearsAgoClass {
         public int YearsAgo(int year) {
             var currentYear = DateTime.Now;;

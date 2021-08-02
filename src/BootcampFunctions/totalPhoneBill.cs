@@ -1,4 +1,4 @@
-namespace Functions {
+namespace BootcampFunctions {
     public class TotalPhoneBillClass {
         public string TotalPhoneBill(string name){
             var nameSplited = name.Split(", ");

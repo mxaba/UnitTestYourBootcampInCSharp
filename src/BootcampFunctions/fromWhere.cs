@@ -1,4 +1,4 @@
-namespace Functions {
+namespace BootcampFunctions {
     public class FromWhereClass {
         public string FromWhere(string city) {
             switch (city.ToLower()) {

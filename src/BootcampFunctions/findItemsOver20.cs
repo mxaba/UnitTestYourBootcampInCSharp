@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace Functions {
+namespace BootcampFunctions {
     public class FindItemsOver20Class {
 
         public class Items {

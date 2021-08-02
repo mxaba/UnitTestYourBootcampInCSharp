@@ -1,6 +1,6 @@
 using System;
 
-namespace Functions {
+namespace BootcampFunctions {
     public class FromBellvilleClass {
         public bool IsFromBellville(string name) {
             return name.StartsWith("CY");

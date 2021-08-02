@@ -1,9 +1,9 @@
 using System;
 using Xunit;
 using System.Collections.Generic;
-using static Functions.FindItemsOver20Class;
+using static BootcampFunctions.FindItemsOver20Class;
 
-namespace Functions.test {
+namespace BootcampFunctions.test {
     public class FindItemsOver20
     {
         [Fact]

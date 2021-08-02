@@ -1,9 +1,9 @@
 using System;
 using Xunit;
 using System.Collections.Generic;
-using static Functions.FindItemsOverClass;
+using static BootcampFunctions.FindItemsOverClass;
 
-namespace Functions.test {
+namespace BootcampFunctions.test {
     public class FindItemsOver
     {
 

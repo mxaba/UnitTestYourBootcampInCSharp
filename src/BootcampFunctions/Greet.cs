@@ -1,4 +1,4 @@
-namespace Functions {
+namespace BootcampFunctions {
     public class GreetPerson {
         public string Greet(string name) {
             if (name is string){
