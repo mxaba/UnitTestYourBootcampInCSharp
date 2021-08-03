@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System;
-using Model;
+using Models;
 
 namespace BootcampFunctions {
     public class FindItemsOver {

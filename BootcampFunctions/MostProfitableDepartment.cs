@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Model;
+using Models;
 
 namespace BootcampFunctions {
     public class MostProfitableDepartment {
