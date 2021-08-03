@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Model;
+
 
 namespace BootcampFunctions {
     class Program {
@@ -41,9 +43,9 @@ namespace BootcampFunctions {
             Console.WriteLine("MostProfitableDepartmentClass");
             Console.WriteLine("MostProfitableDepartmentClass");
 
-            var dep =  new List<MostDepartment>() { 
-                new MostDepartment(){Department = "hardware", Sales = 4500, Day = "Monday"},
-                new MostDepartment(){Department = "Okay", Sales = 90400, Day = "Monday"},
+            var dep =  new List<Department>() { 
+                new Department(){DepartmentName = "hardware", Sales = 4500, Day = "Monday"},
+                new Department(){DepartmentName = "Okay", Sales = 90400, Day = "Monday"},
             };
             
             MostProfitableDepartment profit = new MostProfitableDepartment();

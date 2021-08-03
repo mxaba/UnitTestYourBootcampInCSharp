@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using System.Collections.Generic;
+using Model;
 
 namespace BootcampFunctions.test {
     public class MostProfitableDepartment
@@ -9,22 +10,22 @@ namespace BootcampFunctions.test {
         public void ShouldReturnCarpentry() {
             var mostProfitableDepartment = new BootcampFunctions.MostProfitableDepartment();
 
-            var itemsListOne =  new List<MostDepartment>() {
-                new MostDepartment(){ Sales = 4500, Day="Monday", Department="hardware"},
-                new MostDepartment(){ Sales = 1500, Day="Monday", Department="outdoor"},
-                new MostDepartment(){ Sales = 5500, Day="Monday", Department="carpentry"},
-                new MostDepartment(){ Sales = 7500, Day="Tuesday", Department="hardware"},
-                new MostDepartment(){ Sales = 2505, Day="Tuesday", Department="outdoor"},
-                new MostDepartment(){ Sales = 1540, Day="Tuesday", Department="carpentry"},
-                new MostDepartment(){ Sales = 1500, Day="Wednesday", Department="outdoor"},
-                new MostDepartment(){ Sales = 8507, Day="Wednesday", Department="carpentry"},
-                new MostDepartment(){ Sales = 8009, Day="Wednesday", Department="hardware"},
-                new MostDepartment(){ Sales = 12000, Day="Thursday", Department="outdoor"},
-                new MostDepartment(){ Sales = 18007, Day="Thursday", Department="carpentry"},
-                new MostDepartment(){ Sales = 6109, Day="Thursday", Department="hardware"},
-                new MostDepartment(){ Sales = 7005, Day="Friday", Department="outdoor"},
-                new MostDepartment(){ Sales = 12006, Day="Friday", Department="hardware"},
-                new MostDepartment(){ Sales = 16109, Day="Friday", Department="carpentry"},
+            var itemsListOne =  new List<Department>() {
+                new Department(){ Sales = 4500, Day="Monday", DepartmentName="hardware"},
+                new Department(){ Sales = 1500, Day="Monday", DepartmentName="outdoor"},
+                new Department(){ Sales = 5500, Day="Monday", DepartmentName="carpentry"},
+                new Department(){ Sales = 7500, Day="Tuesday", DepartmentName="hardware"},
+                new Department(){ Sales = 2505, Day="Tuesday", DepartmentName="outdoor"},
+                new Department(){ Sales = 1540, Day="Tuesday", DepartmentName="carpentry"},
+                new Department(){ Sales = 1500, Day="Wednesday", DepartmentName="outdoor"},
+                new Department(){ Sales = 8507, Day="Wednesday", DepartmentName="carpentry"},
+                new Department(){ Sales = 8009, Day="Wednesday", DepartmentName="hardware"},
+                new Department(){ Sales = 12000, Day="Thursday", DepartmentName="outdoor"},
+                new Department(){ Sales = 18007, Day="Thursday", DepartmentName="carpentry"},
+                new Department(){ Sales = 6109, Day="Thursday", DepartmentName="hardware"},
+                new Department(){ Sales = 7005, Day="Friday", DepartmentName="outdoor"},
+                new Department(){ Sales = 12006, Day="Friday", DepartmentName="hardware"},
+                new Department(){ Sales = 16109, Day="Friday", DepartmentName="carpentry"},
             };
 
             Assert.Equal("carpentry", mostProfitableDepartment.mostProfitableDepartment(itemsListOne));
@@ -34,22 +35,22 @@ namespace BootcampFunctions.test {
         public void ShouldReturnOutDoor() {
             var mostProfitableDepartment = new BootcampFunctions.MostProfitableDepartment();
 
-            var itemsListOne =  new List<MostDepartment>() {
-                new MostDepartment(){ Sales = 4500, Day="Monday", Department="hardware"},
-                new MostDepartment(){ Sales = 1500, Day="Monday", Department="outdoor"},
-                new MostDepartment(){ Sales = 5500, Day="Monday", Department="carpentry"},
-                new MostDepartment(){ Sales = 7500, Day="Tuesday", Department="hardware"},
-                new MostDepartment(){ Sales = 2505, Day="Tuesday", Department="outdoor"},
-                new MostDepartment(){ Sales = 1540, Day="Tuesday", Department="carpentry"},
-                new MostDepartment(){ Sales = 1500, Day="Wednesday", Department="hardware"},
-                new MostDepartment(){ Sales = 8507, Day="Wednesday", Department="outdoor"},
-                new MostDepartment(){ Sales = 8009, Day="Wednesday", Department="carpentry"},
-                new MostDepartment(){ Sales = 12000, Day="Thursday", Department="hardware"},
-                new MostDepartment(){ Sales = 18007, Day="Thursday", Department="outdoor"},
-                new MostDepartment(){ Sales = 6109, Day="Thursday", Department="carpentry"},
-                new MostDepartment(){ Sales = 7005, Day="Friday", Department="hardware"},
-                new MostDepartment(){ Sales = 12006, Day="Friday", Department="outdoor"},
-                new MostDepartment(){ Sales = 16109, Day="Friday", Department="carpentry"},
+            var itemsListOne =  new List<Department>() {
+                new Department(){ Sales = 4500, Day="Monday", DepartmentName="hardware"},
+                new Department(){ Sales = 1500, Day="Monday", DepartmentName="outdoor"},
+                new Department(){ Sales = 5500, Day="Monday", DepartmentName="carpentry"},
+                new Department(){ Sales = 7500, Day="Tuesday", DepartmentName="hardware"},
+                new Department(){ Sales = 2505, Day="Tuesday", DepartmentName="outdoor"},
+                new Department(){ Sales = 1540, Day="Tuesday", DepartmentName="carpentry"},
+                new Department(){ Sales = 1500, Day="Wednesday", DepartmentName="hardware"},
+                new Department(){ Sales = 8507, Day="Wednesday", DepartmentName="outdoor"},
+                new Department(){ Sales = 8009, Day="Wednesday", DepartmentName="carpentry"},
+                new Department(){ Sales = 12000, Day="Thursday", DepartmentName="hardware"},
+                new Department(){ Sales = 18007, Day="Thursday", DepartmentName="outdoor"},
+                new Department(){ Sales = 6109, Day="Thursday", DepartmentName="carpentry"},
+                new Department(){ Sales = 7005, Day="Friday", DepartmentName="hardware"},
+                new Department(){ Sales = 12006, Day="Friday", DepartmentName="outdoor"},
+                new Department(){ Sales = 16109, Day="Friday", DepartmentName="carpentry"},
             };
 
             Assert.Equal("outdoor", mostProfitableDepartment.mostProfitableDepartment(itemsListOne));
