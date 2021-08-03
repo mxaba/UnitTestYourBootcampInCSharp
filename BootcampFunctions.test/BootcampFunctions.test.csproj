@@ -22,8 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BootcampFunctions\BootcampFunctions.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj" />
   </ItemGroup>
 
