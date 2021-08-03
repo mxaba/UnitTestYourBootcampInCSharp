@@ -18,7 +18,7 @@ namespace BootcampFunctions.test {
                 new Item(){ Qty = 14, Name="Bread"}
             };
 
-            var itemsListTwo =  new List<Item>() { 
+            var itemsListTwo =  new List<Item>() {
                 new Item(){Name="Banna", Qty = 56},
             };
 
