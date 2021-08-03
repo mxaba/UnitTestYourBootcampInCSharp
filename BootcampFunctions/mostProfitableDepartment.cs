@@ -1,16 +1,9 @@
 using System.Collections.Generic;
-using System;
 
 namespace BootcampFunctions {
     public class MostProfitableDepartment {
 
-        public class MostDepartments {
-            public int Sales {get; set;}
-            public string Department {get; set;}
-            public string Day {get; set;}
-        }
-
-        public string mostProfitableDepartment(List<MostDepartments> listOfObjects) {
+        public string mostProfitableDepartment(List<MostDepartment> listOfObjects) {
             var mostDepartment = "";
             var totalSales = 0;
 

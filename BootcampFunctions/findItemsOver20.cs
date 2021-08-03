@@ -3,14 +3,8 @@ using System;
 
 namespace BootcampFunctions {
     public class FindItemsOver20 {
-
-        public class Items {
-            public int Qty {get; set;}
-            public string Name {get; set;}
-        }
-
-        public List<Items> findItemsOver20(List<Items> listOfObjects) {
-            var newListOfObjects = new List<Items>();
+        public List<Item> findItemsOver20(List<Item> listOfObjects) {
+            var newListOfObjects = new List<Item>();
             foreach (var item in listOfObjects) {
                 if (item.Qty > 20) {
                     newListOfObjects.Add(item);

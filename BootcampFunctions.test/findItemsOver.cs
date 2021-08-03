@@ -1,7 +1,6 @@
 using System;
 using Xunit;
 using System.Collections.Generic;
-using static BootcampFunctions.FindItemsOver;
 using Newtonsoft.Json;
 
 namespace BootcampFunctions.test {
@@ -12,15 +11,15 @@ namespace BootcampFunctions.test {
         public void ShouldFindItemsOver45AndReturnIt() {
             var findItemsOver = new BootcampFunctions.FindItemsOver();
 
-            var itemsListOne =  new List<Items>() { 
-                new Items(){ Qty = 56, Name="Banna"},
-                new Items(){ Qty = 43, Name="Apple"},
-                new Items(){ Qty = 2, Name="Rama"},
-                new Items(){ Qty = 14, Name="Bread"}
+            var itemsListOne =  new List<Item>() { 
+                new Item(){ Qty = 56, Name="Banna"},
+                new Item(){ Qty = 43, Name="Apple"},
+                new Item(){ Qty = 2, Name="Rama"},
+                new Item(){ Qty = 14, Name="Bread"}
             };
 
-            var itemsListTwo =  new List<Items>() { 
-                new Items(){Name="Banna", Qty = 56},
+            var itemsListTwo =  new List<Item>() { 
+                new Item(){Name="Banna", Qty = 56},
             };
 
             var overs = findItemsOver.findItemsOver(itemsListOne, 45);
@@ -35,17 +34,17 @@ namespace BootcampFunctions.test {
         public void ShouldFindItemsOver10AndReturnIt() {
             var findItemsOver = new BootcampFunctions.FindItemsOver();
 
-            var itemsListOne =  new List<Items>() { 
-                new Items(){ Qty = 56, Name="Banna"},
-                new Items(){ Qty = 43, Name="Apple"},
-                new Items(){ Qty = 2, Name="Rama"},
-                new Items(){ Qty = 14, Name="Bread"}
+            var itemsListOne =  new List<Item>() { 
+                new Item(){ Qty = 56, Name="Banna"},
+                new Item(){ Qty = 43, Name="Apple"},
+                new Item(){ Qty = 2, Name="Rama"},
+                new Item(){ Qty = 14, Name="Bread"}
             };
 
-            var itemsListTwo =  new List<Items>() { 
-                new Items(){ Qty = 56, Name="Banna"},
-                new Items(){ Qty = 43, Name="Apple"},
-                new Items(){ Qty = 14, Name="Bread"}
+            var itemsListTwo =  new List<Item>() { 
+                new Item(){ Qty = 56, Name="Banna"},
+                new Item(){ Qty = 43, Name="Apple"},
+                new Item(){ Qty = 14, Name="Bread"}
             };
 
             var overs = findItemsOver.findItemsOver(itemsListOne, 10);
@@ -60,18 +59,18 @@ namespace BootcampFunctions.test {
         public void ShouldFindItemsOver2AndReturnIt() {
             var findItemsOver = new BootcampFunctions.FindItemsOver();
 
-            var itemsListOne =  new List<Items>() { 
-                new Items(){ Qty = 56, Name="Banna"},
-                new Items(){ Qty = 43, Name="Apple"},
-                new Items(){ Qty = 4, Name="Rama"},
-                new Items(){ Qty = 14, Name="Bread"}
+            var itemsListOne =  new List<Item>() { 
+                new Item(){ Qty = 56, Name="Banna"},
+                new Item(){ Qty = 43, Name="Apple"},
+                new Item(){ Qty = 4, Name="Rama"},
+                new Item(){ Qty = 14, Name="Bread"}
             };
 
-            var itemsListTwo =  new List<Items>() {
-                new Items(){ Qty = 56, Name="Banna"},
-                new Items(){ Qty = 43, Name="Apple"},
-                new Items(){ Qty = 4, Name="Rama"},
-                new Items(){ Qty = 14, Name="Bread"}
+            var itemsListTwo =  new List<Item>() {
+                new Item(){ Qty = 56, Name="Banna"},
+                new Item(){ Qty = 43, Name="Apple"},
+                new Item(){ Qty = 4, Name="Rama"},
+                new Item(){ Qty = 14, Name="Bread"}
             };
 
             var overs = findItemsOver.findItemsOver(itemsListOne, 2);

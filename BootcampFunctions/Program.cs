@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using static BootcampFunctions.FindItemsOver20;
-using static BootcampFunctions.MostProfitableDepartment;
 
 namespace BootcampFunctions {
     class Program {
@@ -28,11 +26,11 @@ namespace BootcampFunctions {
             var bills = bill.totalPhoneBill("call, sms, call, sms, sms");
             Console.WriteLine(bills);
 
-            var itemsList2 =  new List<Items>() { 
-                new Items(){ Qty = 56, Name="Bill"},
-                new Items(){ Qty = 43, Name="Steve"},
-                new Items(){ Qty = 2, Name="Ram"},
-                new Items(){ Qty = 14, Name="Abdul"}
+            var itemsList2 =  new List<Item>() { 
+                new Item(){ Qty = 56, Name="Bill"},
+                new Item(){ Qty = 43, Name="Steve"},
+                new Item(){ Qty = 2, Name="Ram"},
+                new Item(){ Qty = 14, Name="Abdul"}
             };
             
             FindItemsOver20 over = new FindItemsOver20();
@@ -43,9 +41,9 @@ namespace BootcampFunctions {
             Console.WriteLine("MostProfitableDepartmentClass");
             Console.WriteLine("MostProfitableDepartmentClass");
 
-            var dep =  new List<MostDepartments>() { 
-                new MostDepartments(){Department = "hardware", Sales = 4500, Day = "Monday"},
-                new MostDepartments(){Department = "Okay", Sales = 90400, Day = "Monday"},
+            var dep =  new List<MostDepartment>() { 
+                new MostDepartment(){Department = "hardware", Sales = 4500, Day = "Monday"},
+                new MostDepartment(){Department = "Okay", Sales = 90400, Day = "Monday"},
             };
             
             MostProfitableDepartment profit = new MostProfitableDepartment();
