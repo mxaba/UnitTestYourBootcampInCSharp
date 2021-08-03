@@ -22,4 +22,4 @@ namespace BootcampFunctions.test {
             Assert.Equal(true, RegCheck.regCheck("CY 090 098", "CY"));
         }
     }
-}
+} 

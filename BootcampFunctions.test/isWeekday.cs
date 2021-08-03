@@ -34,4 +34,4 @@ namespace BootcampFunctions.test {
             Assert.Equal(false, isWeekday.isWeekday("Saturday"));
         }
     }
-}
+} 

@@ -28,4 +28,4 @@ namespace BootcampFunctions.test {
             Assert.Equal("Some other place!", FromWhere.fromWhere("GP"));
         }
     }
-}
+} 

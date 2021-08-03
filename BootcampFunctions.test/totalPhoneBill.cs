@@ -29,4 +29,4 @@ namespace BootcampFunctions.test {
             Assert.Equal("R2.75", TotalPhoneBill.totalPhoneBill("Call"));
         }
     }
-}
+} 
