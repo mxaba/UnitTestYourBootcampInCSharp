@@ -1,6 +1,6 @@
 using Xunit;
 using System.Collections.Generic;
-using Models;
+using BootcampFunctions.Models;
 using Newtonsoft.Json;
 
 namespace BootcampFunctions.test {

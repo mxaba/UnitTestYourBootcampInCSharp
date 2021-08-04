@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System;
-using Models;
+using BootcampFunctions.Models;
 
 
 namespace BootcampFunctions {

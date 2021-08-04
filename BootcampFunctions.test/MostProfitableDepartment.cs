@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 using System.Collections.Generic;
-using Models;
+using BootcampFunctions.Models;
 
 namespace BootcampFunctions.test {
     public class MostProfitableDepartment

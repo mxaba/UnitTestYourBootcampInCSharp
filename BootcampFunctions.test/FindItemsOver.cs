@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using System.Collections.Generic;
 using Newtonsoft.Json;
-using Models;
+using BootcampFunctions.Models;
 
 namespace BootcampFunctions.test {
     public class FindItemsOver
